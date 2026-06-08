@@ -208,6 +208,29 @@
             color: var(--accent-color);
             text-transform: uppercase;
         }
+
+        /* Logo Three.js - minimalistyczne, obok napisu */
+        .threejs-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.2rem;
+            margin-top: 2.5rem;
+        }
+
+        .threejs-logo {
+            width: 70px;
+            height: 70px;
+        }
+
+        .threejs-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.4rem;
+            font-weight: 900;
+            text-transform: lowercase;
+            letter-spacing: -1px;
+            color: var(--text-color);
+        }
     </style>
 </head>
 <body>
@@ -250,16 +273,7 @@
             </div>
         </div>
 
-        <!-- SLAJD 5: Brak barier instalacyjnych (Mikołaj) -->
-        <div class="slide">
-            <div class="slide-content">
-                <h2>ZERO INSTALACJI.<br><span class="accent-text">JUST PLAY.</span></h2>
-                <p>Zdecydowaliśmy się na silnik Three.js uruchamiany bezpośrednio w przeglądarce. Brak barier to klucz do dotarcia do rówieśników.</p>
-                <div class="decor-line"></div>
-            </div>
-        </div>
-
-        <!-- SLAJD 6: Zespół (Mikołaj) -->
+        <!-- SLAJD 5: Zespół (Mikołaj) -->
         <div class="slide">
             <div class="slide-content">
                 <h2>NASZ ZESPÓŁ</h2>
@@ -282,6 +296,18 @@
                     </div>
                 </div>
                 <div class="decor-line" style="margin-top: 4rem;"></div>
+            </div>
+        </div>
+
+        <!-- SLAJD 6: Three.js -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>ZERO INSTALACJI.<br><span class="accent-text">JUST PLAY.</span></h2>
+                <div class="threejs-row">
+                    <img class="threejs-logo" src="threejs-logo.png" alt="Three.js logo">
+                    <div class="threejs-title">three.js</div>
+                </div>
+                <div class="decor-line"></div>
             </div>
         </div>
 
