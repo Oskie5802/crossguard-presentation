@@ -231,6 +231,60 @@
             letter-spacing: -1px;
             color: var(--text-color);
         }
+
+        /* Slajd narzędzi - czego używaliśmy */
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        .tool-card {
+            background-color: rgba(0, 158, 255, 0.02);
+            border: 1px solid rgba(0, 158, 255, 0.15);
+            border-radius: 8px;
+            padding: 2.5rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        .tool-card:hover {
+            background-color: rgba(0, 158, 255, 0.06);
+            border-color: var(--accent-color);
+            transform: translateY(-4px);
+        }
+
+        .tool-logo {
+            height: 64px;
+            width: auto;
+        }
+
+        .tool-person {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: var(--text-color);
+        }
+
+        .tool-name {
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .tool-arrow {
+            color: var(--muted-color);
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+        }
     </style>
 </head>
 <body>
@@ -276,6 +330,7 @@
         <!-- SLAJD 5: Zespół (Mikołaj) -->
         <div class="slide">
             <div class="slide-content">
+                <div class="top-badge" style="font-size: 2.2rem; letter-spacing: 12px;">Undefined</div>
                 <h2>NASZ ZESPÓŁ</h2>
                 <div class="team-grid">
                     <div class="team-card">
@@ -296,6 +351,31 @@
                     </div>
                 </div>
                 <div class="decor-line" style="margin-top: 4rem;"></div>
+            </div>
+        </div>
+
+        <!-- SLAJD: Narzędzia (czego używaliśmy) -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>CZEGO UŻYWALIŚMY</h2>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <div class="tool-person">Oskar</div>
+                        <div class="tool-arrow">↓</div>
+                        <img class="tool-logo" src="logo-github.svg" alt="GitHub">
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-person">Mikołaj</div>
+                        <div class="tool-arrow">↓</div>
+                        <img class="tool-logo" src="logo-trello.svg" alt="Trello">
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-person">Marcel</div>
+                        <div class="tool-arrow">↓</div>
+                        <img class="tool-logo" src="logo-discord.svg" alt="Discord">
+                    </div>
+                </div>
+                <div class="decor-line" style="margin-top: 3.5rem;"></div>
             </div>
         </div>
 
